@@ -1,0 +1,352 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {},
+        "description": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "is_giftcard": {
+          "type": "boolean"
+        },
+        "discountable": {
+          "type": "boolean"
+        },
+        "thumbnail": {
+          "type": "string"
+        },
+        "collection_id": {},
+        "type_id": {},
+        "weight": {
+          "type": "string"
+        },
+        "length": {},
+        "height": {},
+        "width": {},
+        "hs_code": {},
+        "origin_country": {},
+        "mid_code": {},
+        "material": {},
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "type": {},
+        "collection": {},
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "metadata": {},
+              "product_id": {
+                "type": "string"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              },
+              "deleted_at": {},
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "metadata": {},
+                    "option_id": {
+                      "type": "string"
+                    },
+                    "created_at": {
+                      "type": "string"
+                    },
+                    "updated_at": {
+                      "type": "string"
+                    },
+                    "deleted_at": {}
+                  },
+                  "required": [
+                    "id",
+                    "value",
+                    "metadata",
+                    "option_id",
+                    "created_at",
+                    "updated_at",
+                    "deleted_at"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "metadata",
+              "product_id",
+              "created_at",
+              "updated_at",
+              "deleted_at",
+              "values"
+            ]
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {}
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "metadata": {},
+              "rank": {
+                "type": "number"
+              },
+              "product_id": {
+                "type": "string"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              },
+              "deleted_at": {}
+            },
+            "required": [
+              "id",
+              "url",
+              "metadata",
+              "rank",
+              "product_id",
+              "created_at",
+              "updated_at",
+              "deleted_at"
+            ]
+          }
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "sku": {
+                "type": "string"
+              },
+              "barcode": {},
+              "ean": {},
+              "upc": {},
+              "allow_backorder": {
+                "type": "boolean"
+              },
+              "manage_inventory": {
+                "type": "boolean"
+              },
+              "hs_code": {},
+              "origin_country": {},
+              "mid_code": {},
+              "material": {},
+              "weight": {},
+              "length": {},
+              "height": {},
+              "width": {},
+              "metadata": {},
+              "variant_rank": {
+                "type": "number"
+              },
+              "thumbnail": {},
+              "product_id": {
+                "type": "string"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              },
+              "deleted_at": {},
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "metadata": {},
+                    "option_id": {
+                      "type": "string"
+                    },
+                    "option": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "metadata": {},
+                        "product_id": {
+                          "type": "string"
+                        },
+                        "created_at": {
+                          "type": "string"
+                        },
+                        "updated_at": {
+                          "type": "string"
+                        },
+                        "deleted_at": {}
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "metadata",
+                        "product_id",
+                        "created_at",
+                        "updated_at",
+                        "deleted_at"
+                      ]
+                    },
+                    "created_at": {
+                      "type": "string"
+                    },
+                    "updated_at": {
+                      "type": "string"
+                    },
+                    "deleted_at": {}
+                  },
+                  "required": [
+                    "id",
+                    "value",
+                    "metadata",
+                    "option_id",
+                    "option",
+                    "created_at",
+                    "updated_at",
+                    "deleted_at"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "sku",
+              "barcode",
+              "ean",
+              "upc",
+              "allow_backorder",
+              "manage_inventory",
+              "hs_code",
+              "origin_country",
+              "mid_code",
+              "material",
+              "weight",
+              "length",
+              "height",
+              "width",
+              "metadata",
+              "variant_rank",
+              "thumbnail",
+              "product_id",
+              "created_at",
+              "updated_at",
+              "deleted_at",
+              "options"
+            ]
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "is_internal": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "is_internal"
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "subtitle",
+        "description",
+        "handle",
+        "is_giftcard",
+        "discountable",
+        "thumbnail",
+        "collection_id",
+        "type_id",
+        "weight",
+        "length",
+        "height",
+        "width",
+        "hs_code",
+        "origin_country",
+        "mid_code",
+        "material",
+        "created_at",
+        "updated_at",
+        "type",
+        "collection",
+        "options",
+        "tags",
+        "images",
+        "variants",
+        "categories"
+      ]
+    }
+  },
+  "required": [
+    "product"
+  ]
+}
