@@ -7,9 +7,11 @@ import{connectDB, DisconnectDB,client} from "../DB/dbConnection";
 
 test.describe("Customer Login Validations",()=>{
     let loginAPI;
+    let LoginPOM;
     test.beforeAll(async()=>{
         const context=await request.newContext();
         loginAPI = new LoginAPI(context);
+        LoginPOM=new Login(page,expect)
         await connectDB();
     })
 
@@ -18,14 +20,12 @@ test.describe("Customer Login Validations",()=>{
     })
 
     test("URL_Validation",async({page})=>{
-        const LoginPOM=new Login(page,expect)
         await LoginPOM.open();
         await LoginPOM.URL_Validation();  
     })
     
     userLogin.forEach((data, index) => {
     test(`Login  Test #${index}`, async ({ page }) => {
-        const LoginPOM = new Login(page, expect);
         await LoginPOM.open();
         //Frontend
         await LoginPOM.login_functionality(data.email,data.password);
